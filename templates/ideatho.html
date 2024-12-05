@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZIRI</title>
+    <!-- Use url_for to link the static CSS file -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='idothocss.css') }}">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="logo">ZIRI</div>
+        <nav>
+            <ul class="nav-list nav-list-jc-sb">
+              <li><a href="{{ url_for('payment') }}">Payment</a></li> 
+                <li><a href="{{ url_for('explore') }}">Explore</a></li>
+                <li><a href="#mento">Mentorship</a></li>
+                <li><a href="{{ url_for('become_seller') }}">Become a Seller</a></li>
+                <li><a href="{{  url_for('sign_up')}}">Sign in</a></li>
+            </ul>
+        </nav>
+        <div class="header-buttons">
+            <button class="join-btn">Join <img src="https://via.placeholder.com/20" alt="Join Icon"></button>
+            <button class="language-btn">English <img src="https://via.placeholder.com/20" alt="Language Icon"></button>
+        </div>
+    </header>
+
+    <section class="hero-section">
+        <h1>ZIRI</h1>
+        <p>Hire An Expert Or Be An Expert.</p>
+        <p class="subtext">
+            In The Ever-Evolving Landscape Of Skills And Knowledge, The Choice Between Hiring An Expert Or Becoming One Yourself Is A Pivotal Decision.
+        </p>
+
+        <div class="search-container">
+            <input type="text" placeholder="Search To 'Find Freelancers Or Services'">
+            <button><img src="https://via.placeholder.com/20" alt="Search Icon"></button>
+        </div>
+
+        <div class="trending-services">
+            <span>Trending Services</span>
+            <div class="tags">
+                <span>Designer</span>
+                <span>Developer</span>
+                <span>WordPress</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Section -->
+    <section class="popular-section">
+        <h2>Most Popular Services</h2>
+        <div class="popular-container">
+            <div class="popular-item">
+                <h3>Web Development</h3>
+            </div>
+            <div class="popular-item">
+                <h3>Logo Design</h3>
+            </div>
+            <div class="popular-item">
+                <h3>SEO</h3>
+            </div>
+            <div class="popular-item">
+                <h3>Video Editing</h3>
+            </div>
+        </div>
+
+        <h2>Most Popular Businesses</h2>
+        <div class="popular-container">
+            <div class="popular-item">
+                <h3>Food and Hospitality</h3>
+            </div>
+            <div class="popular-item">
+                <h3>Health and Wellness</h3>
+            </div>
+            <div class="popular-item">
+                <h3>Technology and IT</h3>
+            </div>
+            <div class="popular-item">
+                <h3>Sustainable Products</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <h2>Discover Our Outstanding Features</h2>
+        <div class="features-container">
+            <div class="feature">
+                <h3>Showcase Your Work</h3>
+                <p>Display Your Projects And Services To Attract Clients And Expand Your Professional Reach.</p>
+            </div>
+            <div class="feature">
+                <h3>Find What You Need</h3>
+                <p>Discover Talented Freelancers And Businesses Offering The Products Or Services You Seek.</p>
+            </div>
+            <div class="feature">
+                <h3>Get Mentorship</h3>
+                <p>Connect With Experienced Mentors To Gain Insights And Grow Your Career Or Business Effectively.</p>
+            </div>
+            <div class="features-image">
+                <img src="your-image-path.jpg" alt="Features Illustration">
+            </div>
+        </div>
+    </section>
+
+    <!-- Something You'd Need Section -->
+    <section id="mento" class="categories-section">
+        <h2>Here are Something You’d Need</h2>
+        <div class="categories-container">
+            <div class="category-item">
+                <h3>Graphic & Design</h3>
+            </div>
+            <div class="category-item">
+                <h3>Cartoon Animation</h3>
+            </div>
+            <div class="category-item">
+                <h3>Illustration</h3>
+            </div>
+            <div class="category-item">
+                <h3>Flyers & Vouchers</h3>
+            </div>
+            <div class="category-item">
+                <h3>Logo Design</h3>
+            </div>
+            <div class="category-item">
+                <h3>Social Graphics</h3>
+            </div>
+            <div class="category-item">
+                <h3>Article Writing</h3>
+            </div>
+            <div class="category-item">
+                <h3>Video Editing</h3>
+            </div>
+        </div>
+        <button class="more-categories">More Categories &darr;</button>
+    </section>
+
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - ZIRI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='signup.css') }}">
+</head>
+
+<body>
+    <!-- Signup Section -->
+    <div class="signup-container">
+        <div class="signup-header">
+            <h1>Join ZIRI</h1>
+            <p>Unlock opportunities and find your next project.</p>
+        </div>
+        <form class="signup-form" method="POST">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+
+            <label for="Role">Role</label>
+            <input type="text" id="Role" placeholder="Freelancer-Business owner / Mentor" required>
+
+            <label for="username">Username</label>
+            <input type="text" id="username" placeholder="Choose a username" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Create a password" required>
+
+            <button type="submit" class="signup-button">Sign Up</button>
+        </form>
+    </div>
+</body>
+</html>

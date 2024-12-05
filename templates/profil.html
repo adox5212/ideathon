@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+</head>
+<body>
+    <h1>Welcome, {{ user.username }}!</h1>
+    <p>Email: {{ user.email }}</p>
+    <p>Coins: {{ user.coins }}</p>
+    <a href="/">Go Back</a>
+    <form action="{{ url_for('earn_coins') }}" method="POST">
+        <input type="hidden" name="user_id" value="{{ user.id }}">
+        <button type="submit" name="activity" value="referral">Earn Coins for Referral</button>
+        <button type="submit" name="activity" value="workshop">Attend Workshop</button>
+        <button type="submit" name="activity" value="service">Use Service</button>
+    </form>
+    
+</body>
+</html>
